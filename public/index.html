@@ -7,17 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output.css">
   <title>Coffee style</title>
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
   <div id="root">
-    <div class="content-wrapper max-w-screen-2xl text-base mx-auto bg-gray-300">
-      <header class="p-8">
-        <nav class="flex justify-between items-center">
+    <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto bg-gray-300">
+      <header class="p-8 relative z-10">
+        <nav class="flex justify-between items-center ">
           <div class="basis-2/6 text-xl text-gray-800 font-semibold cursor-pointer text-center">
             CoffeeStyle.
           </div>
-          <ul class="basis-3/6 flex gap-8 uppercase text-sm font-medium text-gray-500 justify-end mr-12">
+          <ul
+            class="menu-list basis-3/6 lg:flex lg:gap-8 lg:justify-end lg:max-h-fit lg:relative lg:shadow-none mr-12 uppercase text-sm font-medium text-gray-500 max-h-0 cs-list-menu-res">
             <li class="cs-top-menu">
               <a href="#">home</a>
             </li>
@@ -37,17 +39,23 @@
               <a href="#">MinhBuiIT</a>
             </li>
           </ul>
-          <div class="basis-1/6 ">
+          <div class="lg:basis-1/6 lg:justify-start basis-3/6 justify-end flex">
             <a href="#" class="cs-top-menu inline-flex items-center text-gray-500">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="cs-icon">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
               </svg>
-
-              <span class="mx-3 uppercase text-sm font-medium ">Cart</span>
+              <span class="sm:mx-3 uppercase text-sm font-medium mx-2">Cart</span>
               <span class="cs-pill-num bg-orange-400 text-white font-medium">7</span>
             </a>
+          </div>
+          <div class="flex items-center lg:hidden basic:1/6 menu-hambuger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="cs-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
           </div>
         </nav>
       </header>
@@ -88,6 +96,8 @@
       </footer>
     </div><!--End content-wrapper-->
   </div> <!--end root-->
+
+
 </body>
 
 </html>

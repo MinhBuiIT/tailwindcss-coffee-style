@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* custom css */
 .cs-top-menu {
-  @apply hover:text-gray-800 pb-1 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-light-coffee after:w-0 rounded-3xl hover:after:w-full after:transition-all after:duration-300 after:ease-in-out;
+  @apply hover:text-gray-800 relative lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:h-0.5 lg:after:bg-light-coffee lg:after:w-0 rounded-3xl hover:lg:after:w-full lg:after:transition-all lg:after:duration-300 lg:after:ease-in-out lg:py-0 py-4;
+}
+.cs-list-menu-res {
+  @apply absolute top-full left-0 w-full bg-gray-300 text-center shadow-md overflow-hidden transition-all ease-linear duration-500;
 }
 .cs-icon {
-  @apply h-5 w-5 inline-block;
+  @apply h-5 w-5;
 }
 .cs-pill-num {
-  @apply w-7 flex justify-center items-center rounded-full;
+  @apply sm:w-7 w-5 flex justify-center items-center rounded-full;
 }
