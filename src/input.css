@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* custom css */
+.cs-top-menu {
+  @apply hover:text-gray-800 pb-1 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-light-coffee after:w-0 rounded-3xl hover:after:w-full after:transition-all after:duration-300 after:ease-in-out;
+}
+.cs-icon {
+  @apply h-5 w-5 inline-block;
+}
+.cs-pill-num {
+  @apply w-7 flex justify-center items-center rounded-full;
+}
