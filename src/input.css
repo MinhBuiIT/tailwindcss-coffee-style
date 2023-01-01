@@ -7,11 +7,17 @@
   @apply hover:text-gray-800 relative lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:h-0.5 lg:after:bg-light-coffee lg:after:w-0 rounded-3xl hover:lg:after:w-full lg:after:transition-all lg:after:duration-300 lg:after:ease-in-out lg:py-0 py-4;
 }
 .cs-list-menu-res {
-  @apply absolute top-full left-0 w-full bg-gray-300 text-center shadow-md overflow-hidden transition-all ease-linear duration-500;
+  @apply absolute top-full left-0 w-full text-center shadow-md overflow-hidden transition-all ease-linear duration-500;
 }
 .cs-icon {
   @apply h-5 w-5;
 }
 .cs-pill-num {
   @apply sm:w-7 w-5 flex justify-center items-center rounded-full;
+}
+.cs-button-hover {
+  @apply hover:bg-opacity-90 hover:-translate-y-[3px] hover:shadow-md transition-all ease-in-out duration-300;
+}
+.cs-button-active {
+  @apply active:bg-opacity-100 active:-translate-y-[1px] active:shadow-sm transition-all ease-linear duration-100;
 }
