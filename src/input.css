@@ -21,3 +21,15 @@
 .cs-button-active {
   @apply active:bg-opacity-100 active:-translate-y-[1px] active:shadow-sm transition-all ease-linear duration-100;
 }
+.cs-title-intro {
+  @apply flex items-center gap-3 justify-center py-14;
+}
+.cs-title-intro-line {
+  @apply w-8 h-[2px] bg-gray-200;
+}
+.cs-title-intro-content {
+  @apply uppercase text-gray-500 text-sm font-medium;
+}
+.cs-grid-layout {
+  @apply grid lg:grid-cols-2 grid-cols-1 lg:w-[70%] w-[90%] mx-auto;
+}
