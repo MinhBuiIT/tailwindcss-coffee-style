@@ -18,6 +18,9 @@ module.exports = {
       },
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
+      },
+      backgroundImage: {
+        banner: 'url("./images/slider-bg.jpeg")'
       }
     }
   },
