@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'light-coffee': '#c89f94'
+        'light-coffee': '#c89f94',
+        'light-coffee-bold': '#a25f4b'
       },
       spacing: {
         0.5: '0.125rem'

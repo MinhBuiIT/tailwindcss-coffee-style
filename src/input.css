@@ -22,7 +22,7 @@
   @apply active:bg-opacity-100 active:-translate-y-[1px] active:shadow-sm transition-all ease-linear duration-100;
 }
 .cs-title-intro {
-  @apply flex items-center gap-3 justify-center py-14;
+  @apply flex items-center gap-3 justify-center py-20;
 }
 .cs-title-intro-line {
   @apply w-8 h-[2px] bg-gray-200;
@@ -32,4 +32,16 @@
 }
 .cs-grid-layout {
   @apply grid lg:grid-cols-2 grid-cols-1 lg:w-[70%] w-[90%] mx-auto;
+}
+.cs-overlay-product {
+  @apply w-full h-full bg-opacity-20 bg-gray-800 block relative opacity-0 hover:opacity-100 transition-all ease-in-out duration-300;
+}
+.cs-overlay-button {
+  @apply absolute bottom-6 w-[90%] left-[50%] translate-x-[-50%] bg-white text-gray-800 uppercase text-center py-5 text-sm font-medium;
+}
+.cs-button-sale {
+  @apply absolute top-2 right-2 w-fit px-3 py-2 bg-white text-light-coffee font-semibold text-base z-10;
+}
+.cs-title-product {
+  @apply capitalize text-gray-800 text-2xl font-normal pb-2 block hover:text-light-coffee-bold;
 }
