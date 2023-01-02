@@ -45,3 +45,29 @@
 .cs-title-product {
   @apply capitalize text-gray-800 text-2xl font-normal pb-2 block hover:text-light-coffee-bold;
 }
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px;
+}
+
+.parallax {
+  height: 70vh;
+  transform-style: preserve-3d;
+}
+
+.static {
+  z-index: 999;
+  height: auto;
+  display: block;
+}
+.parallax > .parallax-image {
+  width: 100%;
+  height: 100%;
+  /* ... */
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
