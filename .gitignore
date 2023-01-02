@@ -1,3 +1,4 @@
 node_modules
 tailwind.config-full.js
 public/output.css
+.firebase
